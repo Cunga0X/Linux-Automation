@@ -2,7 +2,7 @@
 
 for i in "Documents" "Downloads" "Pictures" "Videos" "Docker"
     do
-        $ mkdir $i || echo "Directory $i created successfuly."
+        mkdir $i && echo "Directory $i created successfuly."
     
 done
 
