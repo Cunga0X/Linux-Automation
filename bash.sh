@@ -7,7 +7,7 @@ for i in "Documents" "Downloads" "Pictures" "Videos" "Docker"
 done
 
 
-username=$(cat /tmp/userlist | tr 'A-Z'  'a-z')
+username=$(cat /tmp/userlist.txt | tr 'A-Z'  'a-z')
 
 password=$username@123
 
