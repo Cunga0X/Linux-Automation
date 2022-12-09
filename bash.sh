@@ -1,13 +1,9 @@
 #!/bin/bash
 
-for i in "Documents" "Downloads" "Pictures" "Videos" "Docker"
-    do
-        mkdir $i && echo "Directory $i created successfuly."
-    
-done
 
+userfile=/tmp/userlist/ 
 
-username=$(cat /tmp/userlist.txt | tr 'A-Z'  'a-z')
+username=$(cat $userfile | tr 'A-Z'  'a-z')
 
 password=$username@123
 
