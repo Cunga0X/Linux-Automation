@@ -7,7 +7,7 @@ for i in "Documents" "Downloads" "Pictures" "Videos" "Docker"
 done
 
 
-username=$(cat /usersinfo/users.txt | tr 'A-Z'  'a-z')
+username=$(cat /usersinfo/users | tr 'A-Z'  'a-z')
 
 password=$username@123
 
@@ -18,5 +18,5 @@ do
        echo $password | passwd --stdin $user
 done
 
-echo "$(wc -l /usersinfo/users.txt) users have been created" 
+echo "$(wc -l /usersinfo/users) users have been created" 
 
