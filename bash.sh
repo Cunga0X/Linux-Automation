@@ -4,9 +4,7 @@ for i in "Documents" "Downloads" "Pictures" "Videos" "Docker"
     do
         $ mkdir $i || echo "Directory $i created successfuly."
     
-    done
-
-echo "Dir taks successfuly finished"
+done
 
 
 username=$(cat /usersinfo/users.txt | tr 'A-Z'  'a-z')
@@ -20,5 +18,5 @@ do
        echo $password | passwd --stdin $user
 done
 
-
+echo "$(wc -l /usersinfo/users.txt) users have been created" 
 
