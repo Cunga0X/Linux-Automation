@@ -13,7 +13,7 @@ password=$username@123
 
 for user in $username
 do
-       useradd $user
+       sudo useradd $user
        $password
 done
 
